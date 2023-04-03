@@ -1,0 +1,45 @@
+src
+|
+|_App.js
+|    |_BrowserRouter
+|
+|
+|_index.js
+|   |_Provider, store
+|
+|
+|_Components ( components dùng chung )
+|   |_componet.jsx
+|
+|
+|_assets
+|   |_images
+|   |_style.sass (global styles)
+|
+|
+|_features
+|   |_login
+|   |   |_index.js
+|	|   |   |_Route local
+|   |   |
+|   |   |_login.slice.js
+|   |   |
+|   |   |_components
+|   |        |_login.jsx
+|   |        |_login.module.sass
+|   |
+|   |_premium
+|       |_index.js
+|       |_premium.slice.js
+|       |_components
+|           |_premium.jsx
+|           |_premium.module.sass
+|
+|_redux
+|   |_store.js
+|   |_apiRequests.js
+|
+|_api
+|   |_apiClient.js
+|   |_apiName.js
+|
