@@ -18,15 +18,19 @@ src
 |
 |
 |_features
-|   |_login
+|   |auth
 |   |   |_index.js
 |	|   |   |_Route local
 |   |   |
-|   |   |_login.slice.js
+|   |   |_login.slice.js (dispatch redux/toolkit)
 |   |   |
 |   |   |_components
-|   |        |_login.jsx
-|   |        |_login.module.sass
+|   |   |    |_login
+|   |   |       |_login.jsx
+|   |   |       |_login.module.sass
+|   |   |    |_Register
+|   |   |        |_register.jsx
+|
 |   |
 |   |_premium
 |       |_index.js
