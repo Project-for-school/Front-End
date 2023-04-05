@@ -1,0 +1,80 @@
+.explore-box {
+    margin-top: 50px;
+    padding-left: 200px;
+}
+
+.intro-title {
+    margin-bottom: 40px;
+}
+
+h1 {
+    /* font-size: 40px; */
+    font-family: 'Bad Script', cursive;
+    color: transparent;
+}
+
+h1 span {
+    animation: happy 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+h1 span:nth-child(2),
+h1 span:nth-child(5),
+h1 span:nth-child(7) {
+    margin-left: 20px;
+}
+
+@keyframes happy {
+    0% {
+        color: #fff;
+        filter: blur(2px);
+        filter: hue-rotate(0deg);
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff;
+    }
+
+    30%,
+    70% {
+        color: #fff;
+        filter: blur(2px);
+        filter: hue-rotate(360deg);
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff;
+    }
+
+    100% {
+        color: transparent;
+        text-shadow: none;
+        filter: blur(2px);
+        filter: hue-rotate(0deg);
+    }
+}
+
+
+.intro-chapter-base {
+    padding-top: 150px;
+    padding-bottom: 160px;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+}
+
+.button span {
+    font-size: 20px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.button span:nth-child(2) {
+    color: black;
+    background-color: #00b3ff;
+    clip-path: polygon(62% 0, 100% 0%, 100% 100%, 62% 100%, 44% 50%);
+}
+
+.button span:nth-child(2):hover {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+}
+
+.button span:nth-child(1):hover~span:nth-child(2) {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+}

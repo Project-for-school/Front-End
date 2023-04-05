@@ -75,6 +75,10 @@
 }
 
 .nav-item {
+    .nav-link {
+        color: #6c757d;
+    }
+
     .nav-link:hover {
         background-color: transparent !important;
         color: #fff !important;

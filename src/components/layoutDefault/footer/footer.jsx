@@ -12,27 +12,27 @@ const Footer = () => {
                                 <h5>Section</h5>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Home
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Features
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Pricing
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             FAQs
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             About
                                         </a>
                                     </li>
@@ -43,27 +43,27 @@ const Footer = () => {
                                 <h5>Section</h5>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Home
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Features
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Pricing
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             FAQs
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             About
                                         </a>
                                     </li>
@@ -74,27 +74,27 @@ const Footer = () => {
                                 <h5>Section</h5>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Home
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Features
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             Pricing
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             FAQs
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
-                                        <a href="/" class="nav-link p-0" style={{ color: "#6c757d" }}>
+                                        <a href="/" class="nav-link p-0">
                                             About
                                         </a>
                                     </li>
