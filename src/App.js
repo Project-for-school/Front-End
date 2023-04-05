@@ -1,7 +1,8 @@
+import Header from "./components/layoutDefault/header/header";
 function App() {
-  return <>
-    
-  </>;
+  return (
+    <Header />
+  )
 }
 
 export default App;
