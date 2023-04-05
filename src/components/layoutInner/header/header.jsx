@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./header.scss";
 
 const Header = () => {
@@ -11,20 +12,26 @@ const Header = () => {
         <div className="container">
           <header className="d-flex justify-content-center py-3">
             <div className="header-logo">
-              <a href="">
-                <img src="./logo.png" alt="" className="header-logo" />
-              </a>
+              <Link to="/">
+                <img
+                  src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo-dark.e99485d9b.svg"
+                  alt=""
+                  className="header-logo"
+                />
+              </Link>
             </div>
 
             <ul className="nav nav-pills nav-left">
               {arrNav.map((item, index) => (
                 <li key={index} className="nav-item">
-                  <a
+                  <Link
+                  to={`/${item}`}
+                    key={item}
                     onClick={() => setActive(index)}
                     className={active == index ? "nav-link active" : "nav-link"}
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
