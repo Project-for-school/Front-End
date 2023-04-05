@@ -4,7 +4,7 @@ import './footer.scss'
 const Footer = () => {
     return (
         <Fragment>
-            <div id="footer" style={{ background: "#212529" }}>
+            <div id="footer" className="fixed-bottom" style={{ background: "#212529" }} >
                 <div class="container">
                     <footer class="py-5 text-bg-dark">
                         <div class="row">

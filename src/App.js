@@ -1,17 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HeaderDefault from "./components/layoutDefault/header/header";
-import HeaderInner from "./components/layoutInner/header/header";
-import FooterDefault from "./components/layoutDefault/footer/footer"
+import { Routes, Route } from "react-router-dom";
+import Login from "./features/auth/components/login/login";
+import HomePage from "./features/auth/components/homePgae/homePage"
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* <Route path="/" element={<HeaderDefault />} /> */}
-        <Route path="/inner" element={<HeaderInner />} />
-        <Route path="" element={<FooterDefault />} />
-      </Routes>
-    </Router>
-
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
 }
 
