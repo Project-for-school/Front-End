@@ -1,0 +1,55 @@
+#wrapper-register {
+  min-height: 700px;
+  margin-top: 2rem;
+  .container {
+    text-align: center;
+    padding: 40px 33px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    img {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.modal-input {
+  padding: 8.9px 13px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal-input:hover {
+  border-color: #000;
+}
+
+#btn-sign-up {
+  border: none;
+  background-color: #41555e;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+#btn-sign-up:hover {
+  background-color: #546e7a;
+}
+
+.sign-up {
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #546e7a;
+  display: inline-block;
+}
+
+.info {
+  margin: 25px 0;
+}
+
+a {
+  text-decoration: none;
+}

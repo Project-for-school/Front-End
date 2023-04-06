@@ -4,7 +4,6 @@ li {
 
 .header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  
   li a {
     color: #212529;
     cursor: pointer;
@@ -21,10 +20,6 @@ li {
     width: 10rem;
     position: absolute;
     left: 0;
-  }
-
-  .container {
-    position: relative;
   }
 
   .active {

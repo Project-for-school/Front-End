@@ -5,9 +5,9 @@ import "./header.scss";
 const Header = () => {
   const [active, setActive] = useState(0);
   const arrNav = ["Pemium", "Explore", "Problems", "Contest", "Discuss"];
-  const arrNav2 = ["Register", "Contest", "Sign in"];
+  const arrNav2 = ["Register", "Contact", "Sign in"];
   return (
-    <div>
+    <>
       <nav className="header">
         <div className="container">
           <header className="d-flex justify-content-center py-3">
@@ -46,7 +46,7 @@ const Header = () => {
           </header>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 

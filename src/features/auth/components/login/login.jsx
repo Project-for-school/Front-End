@@ -22,14 +22,14 @@ const Login = () => {
                 <InputFields
                   data={username}
                   setData={setUsername}
-                  classLabel="form-label"
+                  classLable="form-label float-start"
                   className="form-control"
                   lable="Username"
                 />
                 <InputFields
                   data={password}
                   setData={setPassword}
-                  classLabel="form-label mt-2"
+                  classLable="form-label float-start mt-2"
                   className="form-control"
                   lable="Password"
                 />

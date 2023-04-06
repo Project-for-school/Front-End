@@ -2,7 +2,7 @@ import './footer.scss'
 
 const footer = () => {
   return (
-    <div className="wrapper-footer-inner">
+    <div className="wrapper-footer-inner mt-auto">
       <div className="container">
         <footer className="py-3 my-4">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">

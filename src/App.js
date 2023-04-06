@@ -1,12 +1,29 @@
-import { Routes, Route } from "react-router-dom";
-import HeaderDefault from "./components/layoutDefault/header/header";
-import Login from "./features/auth/components/login/login";
+import { Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import LayoutInner from "./components/layoutInner";
+import { publicRoutes } from "./routes";
 function App() {
   return (
+    <Router>
       <Routes>
-        <Route path="/" element={<HeaderDefault />} />
-        <Route path="/login" element={<Login />} /> 
+        {publicRoutes.map((route, index) => {
+          const Layout = route.Layout === null ? Fragment : LayoutInner;
+          const Page = route.component;
+          return (
+            <Route
+              key={index}
+              element={
+                <Layout>
+                  <Page />
+                </Layout>
+              }
+              path={route.path}
+            />
+          );
+        })}
       </Routes>
+    </Router>
   );
 }
 

@@ -1,8 +1,8 @@
 const InputFields = (props) => {
-  const { className, lable, classLabel, data, setData } = props;
+  const { className, lable, classLable, data, setData } = props;
   return (
     <>
-      <lable className={classLabel}>{lable}</lable>
+      <lable className={classLable}>{lable}</lable>
       <input
         type="text"
         value={data}
