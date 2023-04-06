@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Header from "../../../../components/layoutInner/header/header";
-import Footer from "../../../../components/layoutInner/footer/footer";
 import InputFields from "../../../../components/inputFields/input";
 import "./login.scss";
 
@@ -8,8 +6,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <div>
-      <Header />
+    <>
       <form>
         <div id="wrapper-login">
           <div id="login">
@@ -54,8 +51,7 @@ const Login = () => {
           </div>
         </div>
       </form>
-      <Footer />
-    </div>
+    </>
   );
 };
 
