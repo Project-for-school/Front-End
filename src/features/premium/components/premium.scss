@@ -1,0 +1,16 @@
+#slider {
+  .slider-logo img {
+    margin: auto;
+  }
+  .container {
+    text-align: center;
+    .slider-inner {
+      flex-direction: column;
+    }
+    .slider-title h1 {
+      color: #000 !important;
+      font-weight: 900;
+      font-size: 70px;
+    }
+  }
+}
