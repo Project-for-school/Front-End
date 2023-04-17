@@ -1,8 +1,10 @@
+import { Fragment } from "react";
 import "./homePage.scss";
+import tiktokImg from "../../../assets/imgs/tiktok.webp"
 
 const HomePage = () => {
   return (
-    <>
+    <Fragment>
       <div>
         <div className="intro-chapter-base">
           <div className="container">
@@ -78,8 +80,113 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+        <div class="explore-chapter-base w-100 d-flex justify-content-center align-items-center position-relative" id="explore">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 z-2 position-relative">
+                <div class="base position-absolute">
+                  <div class="base-title">
+                    <h2>Started Exploring</h2>
+                  </div>
+                  <div class="base-content">
+                    <p>
+                      Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your
+                      programming career.</p>
+                  </div>
+                  <div class="">
+                    <a href="/" class="base-link">Get Started
+                      <i class="icon-btn fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 z-2">
+                <div id="box" className="position-relative m-auto">
+                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                    <img className="w-100 h-100" src={tiktokImg} alt="pic" />
+                  </div>
+                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                    <img className="w-100 h-100" src={tiktokImg} alt="pic" />
+                  </div>
+                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                    <img className="w-100 h-100" src={tiktokImg} alt="pic" />
+                  </div>
+                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                    <img className="w-100 h-100" src={tiktokImg} alt="pic" />
+                  </div>
+                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                    <img className="w-100 h-100" src={tiktokImg} alt="pic" />
+                  </div>
+                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                    <img className="w-100 h-100" src={tiktokImg} alt="pic" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-chapter-base" id="feature">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-icon-feature d-flex list-unstyled">
+                  <li>
+                    <i class="fa-sharp fa-solid fa-phone rounded-circle" style={{ $color: "rgb(118, 118, 233)" }}></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-people-group rounded-circle" style={{ $color: "rgb(0, 255, 0)" }}></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-trophy rounded-circle" style={{ $color: "rgb(255, 186, 58)" }}></i>
+                  </li>
+                </ul>
+                <div class="feature-title">
+                  <h3>Questions, Community & Contests</h3>
+                </div>
+                <div class="feature-content">
+                  <p>
+                    Over 2600 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our
+                    contests to challenge yourself and earn rewards.
+                  </p>
+                </div>
+                <div class=" feature-more">
+                  <a href="/" class="base-link">
+                    View Questions
+                    <i class="icon-btn fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 text-right feature-right">
+                <ul class="list-icon-feature d-flex list-unstyled list-icon-feature-2 justify-content-end">
+                  <li>
+                    <i class="fa-solid fa-suitcase rounded-circle" style={{ $color: "rgb(118, 118, 233)" }}></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-calculator rounded-circle" style={{ $color: "rgb(0, 255, 0)" }}></i>
+                  </li>
+                </ul>
+                <div class="feature-title feature-title-2">
+                  <h3>Companies & Candidates</h3>
+                </div>
+                <div class="feature-content">
+                  <p>
+                    Not only does LeetCode prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses.
+                  </p>
+                </div>
+                <div class=" feature-more feature-more-2">
+                  <a href="/" class="base-link feature-link">
+                    Business Opportunities
+                    <i class="icon-btn fa-solid fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 
