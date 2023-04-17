@@ -9,7 +9,7 @@ const Demo = () => {
       return res;
     }
     getData().then((res) => console.log(res));
-  });
+  }, []);
   return (
     <>
       <h1>Page demo</h1>
