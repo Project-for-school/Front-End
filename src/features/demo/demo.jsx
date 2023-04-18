@@ -1,18 +1,24 @@
 import { useEffect, useState } from "react";
-import { PremiumPageApi } from "../../api/apiRequest";
+import { DemoApi } from "../../api/apiRequest";
 
 const Demo = () => {
   const [title, setTitle] = useState([]);
   useEffect(() => {
-    async function getData() {
-      const res = await PremiumPageApi.getPackage();
+    async function showData() {
+      const res = await DemoApi.getData();
       return res;
     }
-    getData().then((res) => console.log(res));
+    showData()
+      .then((res) => setTitle(res))
+      .catch((err) => console.log(err));
   }, []);
   return (
     <>
-      <h1>Page demo</h1>
+      <ul>
+        {title.map((item) => {
+          return <li key={item.id}>{item.title}</li>;
+        })}
+      </ul>
     </>
   );
 };

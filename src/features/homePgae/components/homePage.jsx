@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import "./homePage.scss";
-import tiktokImg from "../../../assets/imgs/tiktok.webp"
-
+import tiktokImg from "../../../assets/imgs/tiktok.webp";
 const HomePage = () => {
   return (
     <Fragment>
@@ -81,7 +80,10 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div class="explore-chapter-base w-100 d-flex justify-content-center align-items-center position-relative" id="explore">
+        <div
+          class="explore-chapter-base w-100 d-flex justify-content-center align-items-center position-relative"
+          id="explore"
+        >
           <div class="container">
             <div class="row">
               <div class="col-md-6 z-2 position-relative">
@@ -91,11 +93,14 @@ const HomePage = () => {
                   </div>
                   <div class="base-content">
                     <p>
-                      Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your
-                      programming career.</p>
+                      Explore is a well-organized tool that helps you get the
+                      most out of LeetCode by providing structure to guide your
+                      progress towards the next step in your programming career.
+                    </p>
                   </div>
                   <div class="">
-                    <a href="/" class="base-link">Get Started
+                    <a href="/" class="base-link">
+                      Get Started
                       <i class="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
                   </div>
@@ -133,13 +138,22 @@ const HomePage = () => {
               <div class="col-md-6">
                 <ul class="list-icon-feature d-flex list-unstyled">
                   <li>
-                    <i class="fa-sharp fa-solid fa-phone rounded-circle" style={{ $color: "rgb(118, 118, 233)" }}></i>
+                    <i
+                      class="fa-sharp fa-solid fa-phone rounded-circle"
+                      style={{ $color: "rgb(118, 118, 233)" }}
+                    ></i>
                   </li>
                   <li>
-                    <i class="fa-solid fa-people-group rounded-circle" style={{ $color: "rgb(0, 255, 0)" }}></i>
+                    <i
+                      class="fa-solid fa-people-group rounded-circle"
+                      style={{ $color: "rgb(0, 255, 0)" }}
+                    ></i>
                   </li>
                   <li>
-                    <i class="fa-solid fa-trophy rounded-circle" style={{ $color: "rgb(255, 186, 58)" }}></i>
+                    <i
+                      class="fa-solid fa-trophy rounded-circle"
+                      style={{ $color: "rgb(255, 186, 58)" }}
+                    ></i>
                   </li>
                 </ul>
                 <div class="feature-title">
@@ -147,8 +161,10 @@ const HomePage = () => {
                 </div>
                 <div class="feature-content">
                   <p>
-                    Over 2600 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our
-                    contests to challenge yourself and earn rewards.
+                    Over 2600 questions for you to practice. Come and join one
+                    of the largest tech communities with hundreds of thousands
+                    of active users and participate in our contests to challenge
+                    yourself and earn rewards.
                   </p>
                 </div>
                 <div class=" feature-more">
@@ -161,10 +177,16 @@ const HomePage = () => {
               <div class="col-md-6 text-right feature-right">
                 <ul class="list-icon-feature d-flex list-unstyled list-icon-feature-2 justify-content-end">
                   <li>
-                    <i class="fa-solid fa-suitcase rounded-circle" style={{ $color: "rgb(118, 118, 233)" }}></i>
+                    <i
+                      class="fa-solid fa-suitcase rounded-circle"
+                      style={{ $color: "rgb(118, 118, 233)" }}
+                    ></i>
                   </li>
                   <li>
-                    <i class="fa-solid fa-calculator rounded-circle" style={{ $color: "rgb(0, 255, 0)" }}></i>
+                    <i
+                      class="fa-solid fa-calculator rounded-circle"
+                      style={{ $color: "rgb(0, 255, 0)" }}
+                    ></i>
                   </li>
                 </ul>
                 <div class="feature-title feature-title-2">
@@ -172,7 +194,11 @@ const HomePage = () => {
                 </div>
                 <div class="feature-content">
                   <p>
-                    Not only does LeetCode prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses.
+                    Not only does LeetCode prepare candidates for technical
+                    interviews, we also help companies identify top technical
+                    talent. From sponsoring contests to providing online
+                    assessments and training, we offer numerous services to
+                    businesses.
                   </p>
                 </div>
                 <div class=" feature-more feature-more-2">

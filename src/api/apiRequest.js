@@ -13,3 +13,12 @@ export const TopicsApi = {
     return axiosClient.get(url);
   },
 };
+
+
+export const DemoApi = {
+  getData:() => {
+    const url = '/posts'
+    return axiosClient.get(url)
+  }
+}
+
