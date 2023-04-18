@@ -2,10 +2,10 @@ import { Fragment } from "react";
 import "./homePage.scss";
 import tiktokImg from "../../../assets/imgs/tiktok.webp"
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <Fragment>
-      <div>
+      <div style={{ backgroundColor: "#212529" }}>
         <div className="intro-chapter-base">
           <div className="container">
             <div className="row">
@@ -57,20 +57,18 @@ const HomePage = () => {
                   style={{ color: "#919191" }}
                 >
                   <p>
-                    LeetCode is the best platform to help you enhance your
-                    skills, expand your knowledge and prepare for technical
-                    interviews.
+                    {props.introContent || "LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews."}
                   </p>
                 </div>
                 <div className="button position-relative d-flex justify-content m-auto">
-                  <span className="top-0 left-0 w-100 h-100 fw-bold position-absolute d-flex justify-content-center align-items-center rounded-pill cursor-pointer">
-                    <a href="/" className="text-white text-decoration-none">
+                  <span role="button" className="top-0 left-0 w-100 h-100 fw-bold position-absolute d-flex justify-content-center align-items-center rounded-pill cursor-pointer">
+                    <a href="/" className="text-white text-decoration-none p-3 rounded-pill">
                       Create Account
                       <i className="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
                   </span>
-                  <span className="top-0 left-0 w-100 h-100 fw-bold position-absolute d-flex justify-content-center align-items-center rounded-pill cursor-pointer z-2">
-                    <a href="/" className="text-white text-decoration-none">
+                  <span role="button" className="top-0 left-0 w-100 h-100 fw-bold position-absolute d-flex justify-content-center align-items-center rounded-pill cursor-pointer z-2">
+                    <a href="/" className="text-white text-decoration-none p-3 rounded-pill">
                       Create Account
                       <i className="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
@@ -81,44 +79,44 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div class="explore-chapter-base w-100 d-flex justify-content-center align-items-center position-relative" id="explore">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 z-2 position-relative">
-                <div class="base position-absolute">
-                  <div class="base-title">
-                    <h2>Started Exploring</h2>
+        <div className="explore-chapter-base w-100 d-flex justify-content-center align-items-center position-relative" id="explore">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 z-2 position-relative">
+                <div className="base position-absolute">
+                  <div className="base-title">
+                    <h2>{props.baseTitle || "Started Exploring"}</h2>
                   </div>
-                  <div class="base-content">
+                  <div className="base-content">
                     <p>
-                      Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your
-                      programming career.</p>
+                      {props.baseContent || "Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your programming career."}
+                    </p>
                   </div>
-                  <div class="">
-                    <a href="/" class="base-link">Get Started
-                      <i class="icon-btn fa-solid fa-chevron-right"></i>
+                  <div className="">
+                    <a href="/" className="base-link">Get Started
+                      <i className="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 z-2">
+              <div className="col-md-6 z-2">
                 <div id="box" className="position-relative m-auto">
-                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                  <div className="card position-absolute d-flex justify-content-center overflow-hidden">
                     <img className="w-100 h-100" src={tiktokImg} alt="pic" />
                   </div>
-                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                  <div className="card position-absolute d-flex justify-content-center overflow-hidden">
                     <img className="w-100 h-100" src={tiktokImg} alt="pic" />
                   </div>
-                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                  <div className="card position-absolute d-flex justify-content-center overflow-hidden">
                     <img className="w-100 h-100" src={tiktokImg} alt="pic" />
                   </div>
-                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                  <div className="card position-absolute d-flex justify-content-center overflow-hidden">
                     <img className="w-100 h-100" src={tiktokImg} alt="pic" />
                   </div>
-                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                  <div className="card position-absolute d-flex justify-content-center overflow-hidden">
                     <img className="w-100 h-100" src={tiktokImg} alt="pic" />
                   </div>
-                  <div class="card position-absolute d-flex justify-content-center overflow-hidden">
+                  <div className="card position-absolute d-flex justify-content-center overflow-hidden">
                     <img className="w-100 h-100" src={tiktokImg} alt="pic" />
                   </div>
                 </div>
@@ -127,59 +125,91 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div class="feature-chapter-base" id="feature">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-icon-feature d-flex list-unstyled">
+        <div className="feature-chapter-base" id="feature">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <ul className="list-icon-feature d-flex list-unstyled">
                   <li>
-                    <i class="fa-sharp fa-solid fa-phone rounded-circle" style={{ $color: "rgb(118, 118, 233)" }}></i>
+                    <i className="fa-sharp fa-solid fa-phone rounded-circle"
+                      style={{ color: "rgb(118, 118, 233)" }}>
+                    </i>
                   </li>
                   <li>
-                    <i class="fa-solid fa-people-group rounded-circle" style={{ $color: "rgb(0, 255, 0)" }}></i>
+                    <i className="fa-solid fa-people-group rounded-circle"
+                      style={{ color: "rgb(0, 255, 0)" }}>
+                    </i>
                   </li>
                   <li>
-                    <i class="fa-solid fa-trophy rounded-circle" style={{ $color: "rgb(255, 186, 58)" }}></i>
+                    <i className="fa-solid fa-trophy rounded-circle"
+                      style={{ color: "rgb(255, 186, 58)" }}>
+                    </i>
                   </li>
                 </ul>
-                <div class="feature-title">
-                  <h3>Questions, Community & Contests</h3>
+                <div className="feature-title d-flex justify-content-start">
+                  <h3>{props.featureTitle || "Questions, Community & Contests"}</h3>
                 </div>
-                <div class="feature-content">
+                <div className="feature-content">
                   <p>
-                    Over 2600 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our
-                    contests to challenge yourself and earn rewards.
+                    {props.featureContent || "Over 2600 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our contests to challenge yourself and earn rewards."}
                   </p>
                 </div>
-                <div class=" feature-more">
-                  <a href="/" class="base-link">
+                <div className=" feature-more">
+                  <a href="/" className="base-link">
                     View Questions
-                    <i class="icon-btn fa-solid fa-chevron-right"></i>
+                    <i className="icon-btn fa-solid fa-chevron-right"></i>
                   </a>
                 </div>
               </div>
-              <div class="col-md-6 text-right feature-right">
-                <ul class="list-icon-feature d-flex list-unstyled list-icon-feature-2 justify-content-end">
+              <div className="col-md-6 text-right feature-right">
+                <ul className="list-icon-feature d-flex list-unstyled list-icon-feature-2 justify-content-end">
                   <li>
-                    <i class="fa-solid fa-suitcase rounded-circle" style={{ $color: "rgb(118, 118, 233)" }}></i>
+                    <i className="fa-solid fa-suitcase rounded-circle"
+                      style={{ color: "rgb(118, 118, 233)" }}>
+                    </i>
                   </li>
                   <li>
-                    <i class="fa-solid fa-calculator rounded-circle" style={{ $color: "rgb(0, 255, 0)" }}></i>
+                    <i className="fa-solid fa-calculator rounded-circle"
+                      style={{ color: "rgb(0, 255, 0)" }}>
+                    </i>
                   </li>
                 </ul>
-                <div class="feature-title feature-title-2">
-                  <h3>Companies & Candidates</h3>
+                <div className="feature-title feature-title-2 d-flex justify-content-end">
+                  <h3>{props.featureTitleTwo || "Companies & Candidates"}</h3>
                 </div>
-                <div class="feature-content">
-                  <p>
-                    Not only does LeetCode prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses.
+                <div className="feature-content">
+                  <p className="text-end">
+                    {props.featureTextEnd || "Not only does LeetCode prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses."}
                   </p>
                 </div>
-                <div class=" feature-more feature-more-2">
-                  <a href="/" class="base-link feature-link">
+                <div className=" feature-more feature-more-2 text-end">
+                  <a href="/" className="base-link feature-link">
                     Business Opportunities
-                    <i class="icon-btn fa-solid fa-chevron-right"></i>
+                    <i className="icon-btn fa-solid fa-chevron-right"></i>
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="developer-chapter-base" id="developer">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="developer-content text-center">
+                  <div className="bowl position-relative mx-auto my-0 rounded-circle">
+                    <div className="liquid position-absolute top-50"></div>
+                  </div>
+                  <div className="shadow position-absolue left-50 rounded-circle m-auto"></div>
+                  <div className="developer-inner">
+                    <h3 className="d-inline-block">
+                      Developer
+                    </h3>
+                    <p className="w-50 mx-auto my-0" style={{ color: "#919191" }}>
+                      We now support 14 popular coding languages. At our code, Leetcode is about developer. Our powerful develpment tool such as Playground help you test, debug and even write you own projects online.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

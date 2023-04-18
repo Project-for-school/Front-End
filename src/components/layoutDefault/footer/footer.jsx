@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import './footer.scss'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <Fragment>
             <div id="footer" className="" style={{ background: "#212529" }} >
@@ -9,98 +9,97 @@ const Footer = () => {
                     <footer class="py-5 text-bg-dark">
                         <div class="row">
                             <div class="col-6 col-md-2 mb-3">
-                                <h5>Section</h5>
+                                <h5>{"Section"}</h5>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Home
+                                            {"Home"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Features
+                                            {"Features"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Pricing
+                                            {"Pricing"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            FAQs
+                                            {"FAQs"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            About
+                                            {"About"}
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="col-6 col-md-2 mb-3">
-                                <h5>Section</h5>
+                                <h5>{"Section"}</h5>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Home
+                                            {"Home"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Features
+                                            {"Features"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Pricing
+                                            {"Pricing"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            FAQs
+                                            {"FAQs"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            About
+                                            {"About"}
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="col-6 col-md-2 mb-3">
-                                <h5>Section</h5>
+                                <h5>{"Section"}</h5>
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Home
+                                            {"Home"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Features
+                                            {"Features"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            Pricing
+                                            {"Pricing"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            FAQs
+                                            {"FAQs"}
                                         </a>
                                     </li>
                                     <li class="nav-item mb-2 mx-0">
                                         <a href="/" class="nav-link p-0">
-                                            About
+                                            {"About"}
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-
 
                             <div class="col-md-5 offset-md-1 mb-3">
                                 <form>
@@ -114,7 +113,7 @@ const Footer = () => {
                                         <label for="newsletter1" class="visually-hidden"></label>
                                         <input id="newsletter1" type="text" class="form-control mr-0.625"
                                             placeholder="Email address" />
-                                        <button class="btn btn-primary" type="button">Subscribe</button>
+                                        <button class="btn btn-primary" type="button">{"Subscribe"}</button>
                                     </div>
                                 </form>
                             </div>
