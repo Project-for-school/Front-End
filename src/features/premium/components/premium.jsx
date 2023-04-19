@@ -4,14 +4,14 @@ import "./premium.scss";
 import { PremiumPageApi } from "../../../api/apiRequest";
 
 const PremiumPage = () => {
-  const [title, setTitle] = useState([]);
+  const [dataPremium, setDataPremium] = useState([]);
   useEffect(() => {
     async function getData() {
       const res = await PremiumPageApi.getPackage();
       return res;
     }
     getData()
-      .then((res) => console.log(res))
+      .then((res) => setDataPremium(res))
       .catch((err) => console.log(err));
   }, []);
 
