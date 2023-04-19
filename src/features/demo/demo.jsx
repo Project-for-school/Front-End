@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {}  from './api/apiRequest'; //tên biến
+import { DemoApi }  from './api/apiRequest'; //tên biến
 
 const Demo = () => {
   const [title, setTitle] = useState([]);
@@ -9,7 +9,7 @@ const Demo = () => {
       return res;
     }
     showData()
-      .then((res) => setTitle(res))
+      .then((res) => console.log(res))
       .catch((err) => console.log(err));
   }, []);
   return (
