@@ -30,10 +30,13 @@ const PremiumPage = () => {
               <h1>Pemium</h1>
             </div>
             <div className="slider-introduce">
-              <h4>
+              <p>
                 Get started with a LeetCode Subscription that works for you.
-              </h4>
+              </p>
             </div>
+          </div>
+          <div className="container-package  gap-50">
+            <div className="title-package">Pricing</div>
           </div>
         </div>
       </div>
