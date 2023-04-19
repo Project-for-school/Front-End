@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DemoApi } from "../../api/apiRequest";
+import {}  from './api/apiRequest'; //tên biến
 
 const Demo = () => {
   const [title, setTitle] = useState([]);
