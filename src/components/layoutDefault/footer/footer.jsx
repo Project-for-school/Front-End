@@ -104,10 +104,10 @@ const Footer = (props) => {
                             <div class="col-md-5 offset-md-1 mb-3">
                                 <form>
                                     <h5>
-                                        Subscribe to our newsletter
+                                        {"Subscribe to our newsletter"}
                                     </h5>
                                     <p>
-                                        Monthly digest of what's new and exciting from us.
+                                        {"Monthly digest of what's new and exciting from us."}
                                     </p>
                                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                                         <label for="newsletter1" class="visually-hidden"></label>
@@ -121,7 +121,7 @@ const Footer = (props) => {
 
                         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                             <p>
-                                &copy; 2022 Company, Inc. All rights reserved.
+                                {"&copy; 2022 Company, Inc. All rights reserved."}
                             </p>
                             <ul class="list-unstyled d-flex">
                                 <li class="ms-3">

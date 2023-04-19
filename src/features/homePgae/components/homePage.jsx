@@ -3,6 +3,16 @@ import "./homePage.scss";
 import tiktokImg from "../../../assets/imgs/tiktok.webp"
 
 const HomePage = (props) => {
+  const introContent = "LeetCode is the bes   t platform to help you enhance your skills, expand your knowledge and prepare for technical interviews."
+
+  const baseContent = "Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your programming career."
+
+  const featureContent = "Over 2600 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our contests to challenge yourself and earn rewards."
+
+  const featureContentEnd = "Not only does LeetCode prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses."
+
+  const developerContent = "We now support 14 popular coding languages. At our code, Leetcode is about developer. Our powerful develpment tool such as Playground help you test, debug and even write you own projects online."
+
   return (
     <Fragment>
       <div style={{ backgroundColor: "#212529" }}>
@@ -56,20 +66,18 @@ const HomePage = (props) => {
                   className="intro-content mb-2.5"
                   style={{ color: "#919191" }}
                 >
-                  <p>
-                    {props.introContent || "LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews."}
-                  </p>
+                  <p>{introContent}</p>
                 </div>
                 <div className="button position-relative d-flex justify-content m-auto">
                   <span role="button" className="top-0 left-0 w-100 h-100 fw-bold position-absolute d-flex justify-content-center align-items-center rounded-pill cursor-pointer">
                     <a href="/" className="text-white text-decoration-none p-3 rounded-pill">
-                      Create Account
+                      {"Create Account"}
                       <i className="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
                   </span>
                   <span role="button" className="top-0 left-0 w-100 h-100 fw-bold position-absolute d-flex justify-content-center align-items-center rounded-pill cursor-pointer z-2">
                     <a href="/" className="text-white text-decoration-none p-3 rounded-pill">
-                      Create Account
+                      {"Create Account"}
                       <i className="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
                   </span>
@@ -85,15 +93,13 @@ const HomePage = (props) => {
               <div className="col-md-6 z-2 position-relative">
                 <div className="base position-absolute">
                   <div className="base-title">
-                    <h2>{props.baseTitle || "Started Exploring"}</h2>
+                    <h2>{"Started Exploring"}</h2>
                   </div>
                   <div className="base-content">
-                    <p>
-                      {props.baseContent || "Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your programming career."}
-                    </p>
+                    <p>{baseContent}</p>
                   </div>
                   <div className="">
-                    <a href="/" className="base-link">Get Started
+                    <a href="/" className="base-link">{"Get Started"}
                       <i className="icon-btn fa-solid fa-chevron-right"></i>
                     </a>
                   </div>
@@ -147,12 +153,10 @@ const HomePage = (props) => {
                   </li>
                 </ul>
                 <div className="feature-title d-flex justify-content-start">
-                  <h3>{props.featureTitle || "Questions, Community & Contests"}</h3>
+                  <h3>{"Questions, Community & Contests"}</h3>
                 </div>
                 <div className="feature-content">
-                  <p>
-                    {props.featureContent || "Over 2600 questions for you to practice. Come and join one of the largest tech communities with hundreds of thousands of active users and participate in our contests to challenge yourself and earn rewards."}
-                  </p>
+                  <p>{featureContent}</p>
                 </div>
                 <div className=" feature-more">
                   <a href="/" className="base-link">
@@ -175,16 +179,14 @@ const HomePage = (props) => {
                   </li>
                 </ul>
                 <div className="feature-title feature-title-2 d-flex justify-content-end">
-                  <h3>{props.featureTitleTwo || "Companies & Candidates"}</h3>
+                  <h3>{"Companies & Candidates"}</h3>
                 </div>
                 <div className="feature-content">
-                  <p className="text-end">
-                    {props.featureTextEnd || "Not only does LeetCode prepare candidates for technical interviews, we also help companies identify top technical talent. From sponsoring contests to providing online assessments and training, we offer numerous services to businesses."}
-                  </p>
+                  <p className="text-end">{featureContentEnd}</p>
                 </div>
                 <div className=" feature-more feature-more-2 text-end">
                   <a href="/" className="base-link feature-link">
-                    Business Opportunities
+                    {"Business Opportunities"}
                     <i className="icon-btn fa-solid fa-chevron-right"></i>
                   </a>
                 </div>
@@ -204,11 +206,9 @@ const HomePage = (props) => {
                   <div className="shadow position-absolue left-50 rounded-circle m-auto"></div>
                   <div className="developer-inner">
                     <h3 className="d-inline-block">
-                      Developer
+                      {"Developer"}
                     </h3>
-                    <p className="w-50 mx-auto my-0" style={{ color: "#919191" }}>
-                      We now support 14 popular coding languages. At our code, Leetcode is about developer. Our powerful develpment tool such as Playground help you test, debug and even write you own projects online.
-                    </p>
+                    <p className="w-50 mx-auto my-0" style={{ color: "#919191" }}>{developerContent}</p>
                   </div>
                 </div>
               </div>
