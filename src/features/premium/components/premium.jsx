@@ -4,35 +4,39 @@ import "./premium.scss";
 import { PremiumPageApi } from "../../../api/apiRequest";
 
 const PremiumPage = () => {
-  const [title, setTitle] = useState([]);
+  const [dataPremium, setDataPremium] = useState([]);
   useEffect(() => {
     async function getData() {
       const res = await PremiumPageApi.getPackage();
       return res;
     }
-    getData().then((res) => console.log(res));
+    getData()
+      .then((res) => setDataPremium(res))
+      .catch((err) => console.log(err));
   }, []);
-
 
   return (
     <>
       <div id="slider">
-        <div class="container">
-          <div class="col-md-12 d-flex justify-content-center slider-inner">
-            <div class="slider-logo mt-4 mb-4">
+        <div className="container">
+          <div className="col-md-12 d-flex justify-content-center slider-inner">
+            <div className="slider-logo mt-4 mb-4">
               <img
                 src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo.c36eaf5e6.svg"
                 alt=""
               />
             </div>
-            <div class="slider-title">
+            <div className="slider-title">
               <h1>Pemium</h1>
             </div>
-            <div class="slider-introduce">
-              <h4>
+            <div className="slider-introduce">
+              <p>
                 Get started with a LeetCode Subscription that works for you.
-              </h4>
+              </p>
             </div>
+          </div>
+          <div className="container-package  gap-50">
+            <div className="title-package">Pricing</div>
           </div>
         </div>
       </div>

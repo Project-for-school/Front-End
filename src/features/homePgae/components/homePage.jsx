@@ -3,7 +3,7 @@ import "./homePage.scss";
 import tiktokImg from "../../../assets/imgs/tiktok.webp"
 
 const HomePage = (props) => {
-  const introContent = "LeetCode is the bes   t platform to help you enhance your skills, expand your knowledge and prepare for technical interviews."
+  const introContent = "LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews."
 
   const baseContent = "Explore is a well-organized tool that helps you get the most out of LeetCode by providing structure to guide your progress towards the next step in your programming career."
 

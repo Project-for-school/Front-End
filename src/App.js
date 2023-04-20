@@ -1,9 +1,10 @@
 import { Fragment } from "react";
-import { BrowserRouter as Router ,Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import LayoutInner from "./components/layoutInner";
 import LayoutDefault from "./components/layoutDefault";
 import HomePage from "./features/homePgae/components/homePage";
+import ExplorePage from "./features/explore/explore";
 import { publicRoutes } from "./routes";
 function App() {
   return (
@@ -16,6 +17,14 @@ function App() {
               <LayoutDefault>
                 <HomePage />
               </LayoutDefault>
+            }
+          />
+          <Route
+            path="/explore"
+            element={
+              <LayoutInner>
+                <ExplorePage />
+              </LayoutInner>
             }
           />
           {publicRoutes.map((route, index) => {

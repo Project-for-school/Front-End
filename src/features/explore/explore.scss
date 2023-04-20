@@ -1,0 +1,6 @@
+.tool-item {
+    &:hover span {
+        display: inline-block;
+        transition-duration: 0.5s;
+    }
+}

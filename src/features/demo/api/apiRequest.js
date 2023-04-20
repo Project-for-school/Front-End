@@ -1,7 +1,7 @@
 import axiosClient from "./apiClient";
 
-export const PremiumPageApi = {
-  getPackage: () => {
+export const DemoApi = {
+  getData: () => {
     const url = "/v1/premium/";
     return axiosClient.get(url);
   },
