@@ -10,17 +10,17 @@ import featuredIMG5 from "../../../assets/imgs/featuredIMG5.png"
 export default class featuredSection extends Component {
     render() {
         const settings = {
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            draggable: true,
+            "dots": true,
+            "infinite": true,
+            "speed": 500,
+            "slidesToShow": 4,
+            "slidesToScroll": 1,
+            "arrows": true,
+            "draggable": true,
         };
         return (
             <div>
-                <Slider {...settings} className="featured-section mt-20">
+                <Slider {...settings} className="featured-section mt-20 h-[284px]">
                     <div className="featured-item h-[284px] relative">
                         <div className="featured-item-img h-[200px] relative">
                             <img src={featuredIMG1} alt="" className="absolute h-full" />
