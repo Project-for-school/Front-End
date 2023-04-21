@@ -7,6 +7,7 @@ import featuredIMG3 from "../../../assets/imgs/featuredIMG3.jpg"
 import featuredIMG4 from "../../../assets/imgs/featuredIMG4.png"
 import featuredIMG5 from "../../../assets/imgs/featuredIMG5.png"
 
+
 export default class featuredSection extends Component {
     render() {
         const settings = {

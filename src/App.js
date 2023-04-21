@@ -2,31 +2,12 @@ import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import LayoutInner from "./components/layoutInner";
-import LayoutDefault from "./components/layoutDefault";
-import HomePage from "./features/homePgae/components/homePage";
-import ExplorePage from "./features/explore/explore";
 import { publicRoutes } from "./routes";
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <LayoutDefault>
-                <HomePage />
-              </LayoutDefault>
-            }
-          />
-          <Route
-            path="/explore"
-            element={
-              <LayoutInner>
-                <ExplorePage />
-              </LayoutInner>
-            }
-          />
           {publicRoutes.map((route, index) => {
             const Layout = route.layout === null ? Fragment : LayoutInner;
             const Page = route.component;

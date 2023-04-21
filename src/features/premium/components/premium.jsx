@@ -19,7 +19,7 @@ const PremiumPage = () => {
     <>
       <div id="slider">
         <div className="container">
-          <div className="col-md-12 d-flex justify-content-center slider-inner">
+          <div className="d-flex justify-content-center slider-inner">
             <div className="slider-logo mt-4 mb-4">
               <img
                 src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/logo.c36eaf5e6.svg"
@@ -35,8 +35,20 @@ const PremiumPage = () => {
               </p>
             </div>
           </div>
-          <div className="container-package  gap-50">
-            <div className="title-package">Pricing</div>
+          <div className="container-package gap-5 mt-5">
+            <h1 className="title-package">Pricing</h1>
+            <div className="d-flex justify-content-around package-content">
+              {dataPremium.map((data) => {
+                return (
+                  <div className={`container-content ${data.package}`}>
+                    <h1 className="header-package">{data.package}</h1>
+                    <p>{data.description}</p>
+                    <p>{data.price}</p>
+                    <button>Subscribe</button>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

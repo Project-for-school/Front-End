@@ -31,22 +31,9 @@ const Login = () => {
                   lable="Password"
                 />
               </div>
-
               <button type="submit" className="btn btn-primary mb-2">
                 Sign In
               </button>
-              <div className="action">
-                <div className="help">
-                  <a href="" className="link-color">
-                    Forgot Password?
-                  </a>
-                </div>
-                <div className="help">
-                  <a href="" className="link-color">
-                    Sign Up
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
