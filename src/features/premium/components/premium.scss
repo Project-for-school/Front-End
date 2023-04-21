@@ -1,19 +1,40 @@
 #slider {
-  .slider-logo img {
-    margin: auto;
-  }
   .container {
     text-align: center;
     .slider-inner {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .slider-title h1 {
       color: #000 !important;
       font-weight: 700;
-      font-size: 7rem;
+      font-size: 5rem;
     }
-    .container-package{
-      .title-package{
+    .container-package {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .Monthly {
+        background-color: #f7f7f7;
+      }
+      .Yearly {
+        background-color: #ffdbc3;
+      }
+      .title-package {
+        font-weight: 600;
+        opacity: 80%;
+      }
+      .package-content {
+        margin-left: -3rem;
+      }
+      .container-content {
+        width: 50%;
+        margin-left: 3rem;
+        text-align: start;
+        padding: 2rem;
+        .header-package {
+        }
       }
     }
   }
