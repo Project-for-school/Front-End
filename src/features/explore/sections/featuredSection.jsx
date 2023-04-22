@@ -11,17 +11,25 @@ import featuredIMG5 from "../../../assets/imgs/featuredIMG5.png"
 export default class featuredSection extends Component {
     render() {
         const settings = {
-            "dots": true,
+            // "dots": true,
             "infinite": true,
             "speed": 500,
             "slidesToShow": 4,
             "slidesToScroll": 1,
             "arrows": true,
             "draggable": true,
+            "prevArrow":
+                <button type='button' className='slick-prev slick-arrow cursor-pointer'>
+                    <i className="text-white bg-[#000] px-4 py-10 font-black text-base rounded-2xl fa-solid fa-chevron-left"></i>
+                </button>,
+            "nextArrow":
+                <button type='button' className='slick-next slick-arrow cursor-pointer  '>
+                    <i className="text-white bg-[#000] px-4 py-10 font-black text-base rounded-2xl fa-solid fa-chevron-right"></i>
+                </button>,
         };
         return (
             <div>
-                <Slider {...settings} className="featured-section mt-20 h-[284px]">
+                <Slider {...settings} className="featured-section mt-20 h-full relative">
                     <div className="featured-item h-[284px] relative">
                         <div className="featured-item-img h-[200px] relative">
                             <img src={featuredIMG1} alt="" className="absolute h-full" />
@@ -96,7 +104,6 @@ export default class featuredSection extends Component {
                             <img src={featuredIMG5} alt="" className="absolute h-full" />
                         </div>
                     </div>
-
                 </Slider>
             </div>
         );
