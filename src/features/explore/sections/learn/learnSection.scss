@@ -1,0 +1,35 @@
+.slick-slider {
+    .slick-arrow {
+        background-color: #fff !important;
+        position: absolute;
+        z-index: 2;
+        top: calc(50% - 1rem);
+    }
+
+    .slick-prev {
+        left: -8%;
+    }
+
+    .slick-list {
+        overflow: hidden;
+        padding: 10px 0;
+
+        .slick-track {
+            display: flex;
+
+            .slick-slide {
+                width: 280px !important;
+                height: 284px !important;
+                margin: 0 10px;
+                border-radius: 20px;
+                // overflow: hidden;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+                z-index: 2;
+            }
+        }
+    }
+
+    .slick-next {
+        right: -8%;
+    }
+}

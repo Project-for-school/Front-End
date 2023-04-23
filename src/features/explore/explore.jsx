@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import "./explore.scss"
-import FeaturedSection from "./sections/featuredSection";
+import FeaturedSection from "./sections/featured/featuredSection";
+import ViewSection from "./sections/interview/viewSection";
+import LearnSection from "./sections/learn/learnSection";
 
 const ExplorePage = () => {
     return (
@@ -42,6 +44,28 @@ const ExplorePage = () => {
                         </button>
                     </div>
                     <FeaturedSection />
+                </div>
+                <div className="popular-section w-[1100px] mx-auto mt-[100px]">
+                    <div className="category-title flex justify-between">
+                        <h1 className="font-medium text-5xl text-[#585858]">
+                            {"Interview"}
+                        </h1>
+                        <button className="text-[#2194FF] text-xl font-semibold shadow-lg rounded-3xl">
+                            <a href="/" className="py-3 px-4">{"More"}</a>
+                        </button>
+                    </div>
+                    <ViewSection />
+                </div>
+                <div className="popular-section w-[1100px] mx-auto mt-[100px]">
+                    <div className="category-title flex justify-between">
+                        <h1 className="font-medium text-5xl text-[#585858]">
+                            {"Learn"}
+                        </h1>
+                        <button className="text-[#2194FF] text-xl font-semibold shadow-lg rounded-3xl">
+                            <a href="/" className="py-3 px-4">{"More"}</a>
+                        </button>
+                    </div>
+                    <LearnSection />
                 </div>
             </div>
         </Fragment>
